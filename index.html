@@ -1,43 +1,199 @@
-<header class="hero-section shadow-lg">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 text-center">
-        <img
-            src="https://github.com/ahema-88/graph-ai-portfolio/blob/main/IMG-20240203-WA0004.jpg?raw=true"
-            alt="Alimatou Héma"
-            class="w-32 h-32 sm:w-40 sm:h-40 rounded-full mx-auto mb-6 border-4 border-white shadow-lg"
-            onerror="this.onerror=null;this.src='https://placehold.co/150x150/a78bfa/white?text=AH';"
-        />
-        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white">
-            Alimatou Héma
-        </h1>
-        <p class="mt-2 text-lg sm:text-xl text-slate-200">
-            PharmD, MSc | Generative AI for Work & Research
-        </p>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimatou Héma - Generative AI Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0c0a18; /* Deep purple-blue */
+            color: #e2e8f0;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #c084fc, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-bg {
+            background-color: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .section-glow {
+            position: relative;
+            z-index: 1;
+        }
+        .section-glow::before {
+            content: '';
+            position: absolute;
+            top: -150px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.1), transparent 70%);
+            z-index: -1;
+            pointer-events: none;
+        }
+        .header-bg {
+             background-color: rgba(12, 10, 24, 0.7);
+             backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="antialiased">
 
-        <!-- Navigation -->
-        <nav
-            class="mt-8 flex flex-wrap justify-center gap-2 sm:gap-4"
-            aria-label="Primary navigation"
-        >
-            <a
-                href="#about-me"
-                class="nav-link bg-white/80 text-slate-800 font-semibold py-2 px-4 rounded-full shadow-md backdrop-blur-sm"
-                >About Me</a
-            >
-            <a
-                href="#about-course"
-                class="nav-link bg-white/80 text-slate-800 font-semibold py-2 px-4 rounded-full shadow-md backdrop-blur-sm"
-                >About the Course</a
-            >
-            <a
-                href="#submissions"
-                class="nav-link bg-white/80 text-slate-800 font-semibold py-2 px-4 rounded-full shadow-md backdrop-blur-sm"
-                >Weekly Submissions</a
-            >
-            <a
-                href="#"
-                class="nav-link bg-green-600 hover:bg-green-500 text-white font-semibold py-2 px-4 rounded-full shadow-md"
-                >Download CV</a
-            >
-        </nav>
-    </div>
-</header>
+    <header class="fixed top-0 left-0 right-0 z-50 header-bg border-b border-slate-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-white">Alimatou Héma</h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about-me" class="text-slate-300 hover:text-white transition-colors duration-300">About Me</a>
+                <a href="#about-course" class="text-slate-300 hover:text-white transition-colors duration-300">The Course</a>
+                <a href="#submissions" class="text-slate-300 hover:text-white transition-colors duration-300">Submissions</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-24">
+
+        <section id="hero" class="py-20 md:py-32 text-center">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-4xl md:text-6xl font-extrabold leading-tight">
+                        <span class="gradient-text">Generative AI</span>
+                        <span class="text-white"> for Work & Research</span>
+                    </h2>
+                    <p class="mt-6 text-lg md:text-xl text-slate-400">
+                        A portfolio documenting my journey and projects in applying no-code AI tools for task automation and enhanced research productivity.
+                    </p>
+                    <div class="mt-10">
+                        <a href="#about-me" class="bg-violet-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-violet-700 transition-all duration-300 transform hover:scale-105">
+                            Discover My Work
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-me" class="py-20 section-glow">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">About Me</h2>
+                    <p class="text-slate-400 mt-2">Pharmacist, Researcher, and Lifelong Learner</p>
+                </div>
+                <div class="max-w-4xl mx-auto card-bg rounded-2xl p-8 md:p-12">
+                    <div class="grid md:grid-cols-3 gap-8 items-center">
+                        <div class="md:col-span-1 text-center">
+                            <img src="https://raw.githubusercontent.com/ahema-88/AI_course_site_creating_session/main/IMG-20240203-WA0004.jpg" alt="Alimatou Héma" class="rounded-full w-40 h-40 mx-auto border-4 border-violet-500/50 object-cover">
+                            <h3 class="text-2xl font-semibold mt-4 text-white">Alimatou Héma</h3>
+                            <p class="text-slate-400">PharmD, MSc, PhDc</p>
+                        </div>
+                        <div class="md:col-span-2">
+                            <p class="text-slate-300 mb-4">
+                                I am a dedicated pharmacist at the Groupe de Recherche Action en Santé (GRAS) with a deep-rooted background in microbiology and clinical biology. My career is centered around impactful clinical studies and scientific research, particularly in public health challenges like malaria and shigellosis.
+                            </p>
+                            <p class="text-slate-300">
+                                This course in Generative AI represents my commitment to integrating cutting-edge technology into my research workflow. I am excited to leverage AI to automate complex tasks, analyze data more efficiently, and enhance the communication of scientific findings.
+                            </p>
+                            <div class="mt-6 flex flex-wrap gap-2">
+                                <span class="bg-slate-700 text-slate-300 text-sm font-medium px-3 py-1 rounded-full">Clinical Research</span>
+                                <span class="bg-slate-700 text-slate-300 text-sm font-medium px-3 py-1 rounded-full">Microbiology</span>
+                                <span class="bg-slate-700 text-slate-300 text-sm font-medium px-3 py-1 rounded-full">Data Analysis</span>
+                                <span class="bg-slate-700 text-slate-300 text-sm font-medium px-3 py-1 rounded-full">Public Health</span>
+                                <span class="bg-slate-700 text-slate-300 text-sm font-medium px-3 py-1 rounded-full">Generative AI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-course" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">About the Course</h2>
+                    <p class="text-slate-400 mt-2">An 8-week guided course by The GRAPH Courses.</p>
+                </div>
+                <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+                    <div class="card-bg rounded-2xl p-8">
+                        <h3 class="text-xl font-bold gradient-text mb-3">Course Overview</h3>
+                        <p class="text-slate-300">
+                            "Generative AI for Work & Research Productivity" is a hands-on course focused on using no-code AI tools to automate tasks. It covers everything from understanding Large Language Models (LLMs) to building custom GPTs, analyzing data, and creating AI-driven communication materials.
+                        </p>
+                    </div>
+                    <div class="card-bg rounded-2xl p-8">
+                        <h3 class="text-xl font-bold gradient-text mb-3">Key Features</h3>
+                        <ul class="list-disc list-inside text-slate-300 space-y-2">
+                            <li>Weekly live workshops and help sessions.</li>
+                            <li>Personalized feedback on assessments.</li>
+                            <li>Private community for collaboration.</li>
+                            <li>Capstone project coaching and showcase.</li>
+                            <li>Focus on practical, real-world application.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="submissions" class="py-20 section-glow">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">My Weekly Submissions</h2>
+                    <p class="text-slate-400 mt-2">Projects and explorations from each course module.</p>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="card-bg rounded-2xl p-6 transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-lg font-bold text-white">Module 1: Websites, Documents & Presentations</h3>
+                        <p class="text-slate-400 mt-2 text-sm">Learning the fundamentals of LLMs and using AI assistants for creating structured documents and presentations.</p>
+                        <a href="#" class="inline-block mt-4 text-violet-400 font-semibold hover:text-violet-300 transition-colors">View Submission &rarr;</a>
+                    </div>
+                    <div class="card-bg rounded-2xl p-6 transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-lg font-bold text-white">Module 2: AI-Automated Data Analysis</h3>
+                        <p class="text-slate-400 mt-2 text-sm">Using AI tools like Julius and ChatGPT Code Interpreter to process datasets and create automated reports.</p>
+                        <a href="#" class="inline-block mt-4 text-violet-400 font-semibold hover:text-violet-300 transition-colors">View Submission &rarr;</a>
+                    </div>
+                    <div class="card-bg rounded-2xl p-6 transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-lg font-bold text-white">Module 3: GenAI for Research & Text Analysis</h3>
+                        <p class="text-slate-400 mt-2 text-sm">Applying AI for efficient literature reviews, text classification, and knowledge synthesis from academic publications.</p>
+                        <a href="#" class="inline-block mt-4 text-violet-400 font-semibold hover:text-violet-300 transition-colors">View Submission &rarr;</a>
+                    </div>
+                    <div class="card-bg rounded-2xl p-6 transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-lg font-bold text-white">Module 4: Custom GPTs and Chatbots</h3>
+                        <p class="text-slate-400 mt-2 text-sm">Building custom research assistants and interactive chatbots using advanced LLM architectures.</p>
+                        <a href="#" class="inline-block mt-4 text-violet-400 font-semibold hover:text-violet-300 transition-colors">View Submission &rarr;</a>
+                    </div>
+                    <div class="card-bg rounded-2xl p-6 transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-lg font-bold text-white">Module 5: AI for Task Automation</h3>
+                        <p class="text-slate-400 mt-2 text-sm">Designing AI agents and workflows to automate repetitive research tasks, from email responses to literature monitoring.</p>
+                        <a href="#" class="inline-block mt-4 text-violet-400 font-semibold hover:text-violet-300 transition-colors">View Submission &rarr;</a>
+                    </div>
+                    <div class="card-bg rounded-2xl p-6 transform hover:-translate-y-2 transition-transform duration-300">
+                        <h3 class="text-lg font-bold text-white">Module 6: GenAI for Communication & Outreach</h3>
+                        <p class="text-slate-400 mt-2 text-sm">Using AI to generate research summaries, scientific figures, and video abstracts for effective dissemination.</p>
+                        <a href="#" class="inline-block mt-4 text-violet-400 font-semibold hover:text-violet-300 transition-colors">View Submission &rarr;</a>
+                    </div>
+                     <div class="card-bg rounded-2xl p-6 transform hover:-translate-y-2 transition-transform duration-300 sm:col-span-2 lg:col-span-1 lg:col-start-2">
+                        <h3 class="text-lg font-bold text-white">Module 7: Capstone Project & Showcase</h3>
+                        <p class="text-slate-400 mt-2 text-sm">A final project that integrates the skills learned throughout the course to create a novel AI solution or tool.</p>
+                        <a href="#" class="inline-block mt-4 text-violet-400 font-semibold hover:text-violet-300 transition-colors">View Submission &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-slate-800 mt-20">
+        <div class="container mx-auto px-6 py-8 text-center text-slate-400">
+            <p>&copy; 2025 Alimatou Héma. All rights reserved.</p>
+            <p class="text-sm mt-2">This site was created as part of the "Generative AI for Work & Research" course by The GRAPH Courses.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
